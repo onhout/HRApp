@@ -1,0 +1,28 @@
+[
+  {
+    "id":"0001",
+    "name": {
+      "first": "Peter",
+      "last": "Liu"
+    },
+    "address":{
+      "lines": ["1234 Coding Street"],
+      "city": "Oakland",
+      "state": "CA",
+      "zip": "94601"
+    }
+  },
+  {
+    "id":"0002",
+    "name": {
+      "first": "Super",
+      "last": "Man"
+    },
+    "address":{
+      "lines": ["1234 Mars Street"],
+      "city": "Titan City",
+      "state": "District 13",
+      "zip": "139582"
+    }
+  }
+]

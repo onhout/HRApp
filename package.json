@@ -1,0 +1,22 @@
+{
+  "name": "HRApp",
+  "version": "1.0.0",
+  "description": "Tutorial in building JS Full-Stack Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onhout/HRApp"
+  },
+  "author": "Peter Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onhout/HRApp/issues"
+  },
+  "homepage": "https://github.com/onhout/HRApp",
+  "dependencies": {
+    "colors": "^1.0.3"
+  }
+}
