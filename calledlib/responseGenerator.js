@@ -22,9 +22,9 @@ exports.send500 = function(data, response){
 exports.staticFile = function(staticPath){
     return function(data, response){
         var readStream; //fix so routes to /home and /home.html both work
-        console.log("THIS DATA IS "+data+ " AND RESPONSE IS "+response);
         data = data.replace(/^(\/home)(.html)?$/i, '$1.html');
         data = '.' + staticPath + data;
+        console.log(data);
         fs.stat(data, function(error, stats){
             if (error || stats.isDirectory()){
                 return exports.send404(response);
