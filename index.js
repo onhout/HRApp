@@ -36,7 +36,7 @@ http.createServer(function(req, res){
         });
     } else {
         //try to send the static file
-        res.writeHead(200);
+        res.writeHead(200, {'Content-Type': 'text/html'});
         staticFile('/home.html', res);
     }
 
