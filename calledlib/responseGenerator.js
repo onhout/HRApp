@@ -22,6 +22,7 @@ exports.send500 = function(data, response){
 exports.staticFile = function(staticPath){
     return function(data, response){
         var readStream; //fix so routes to /home and /home.html both work
+        console.log("THIS DATA IS "+data+ " AND RESPONSE IS "+response);
         data = data.replace(/^(\/home)(.html)?$/i, '$1.html');
         data = '.' + staticPath + data;
         fs.stat(data, function(error, stats){
@@ -30,6 +31,6 @@ exports.staticFile = function(staticPath){
             }
             readStream = fs.createReadStream(data);
             return readStream.pipe(response);
-        })
+        });
     }
-}
+};

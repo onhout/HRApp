@@ -2,7 +2,7 @@
 var http = require('http');
 var employeeService = require('./lib/employees');
 var responder = require('./calledlib/responseGenerator');
-var staticFile = responder.staticFile('/public');
+var staticFile = responder.staticFile('./public');
 http.createServer(function(req, res){
     //parsed url to work with in case there are parameters
     var _url;
@@ -37,7 +37,7 @@ http.createServer(function(req, res){
     } else {
         //try to send the static file
         res.writeHead(200);
-        res.end('The current time is ' + Date.now() + '. Testing Environment: '+ req.headers['user-agent']);
+        res.end('cannot send the static file?');
     }
 
 }).listen(1337, '127.0.0.1');
